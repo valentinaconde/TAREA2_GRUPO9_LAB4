@@ -31,6 +31,12 @@ public class Profesor extends Empleado {
 		this.antiguedadDocente = antiguedadDocente;
 	}
 	
+	//PUNTO 4 metodo tostring
+	public String toString() {
+		return "ID= " + getId() + ", NOMBRE= " + getNombre() +", EDAD= " + getEdad() + ", CARGO= " + cargo + ", ANTIGUEDAD= " + antiguedadDocente ;
+	}
+	
+	
 	
 
 }
