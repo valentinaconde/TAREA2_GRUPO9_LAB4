@@ -26,5 +26,19 @@ public class mainEjercicio1_b {
         while (it.hasNext()) {
             System.out.println(it.next().toString());
         }
-    }
+    
+	
+	Profesor p1 = new Profesor("Juan", 38, "Profesor Historia", 12);
+	
+	Profesor p2 = new Profesor("Juan", 38, "Profesor Historia", 12);
+	
+	if( p1.equals(p2)) {
+		System.out.println("Tienen las misma informacion");
+	}
+	else {
+		System.out.println("No tienen la misma informacion");
+	}
+	
 }
+}
+
