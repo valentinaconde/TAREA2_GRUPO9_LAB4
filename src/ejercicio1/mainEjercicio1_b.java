@@ -33,10 +33,10 @@ public class mainEjercicio1_b {
 	Profesor p2 = new Profesor("Juan", 38, "Profesor Historia", 12);
 	
 	if( p1.equals(p2)) {
-		System.out.println("Tienen las misma informacion");
+		System.out.println("Es el mismo profesor");
 	}
 	else {
-		System.out.println("No tienen la misma informacion");
+		System.out.println("No es el mismo profesor");
 	}
 	
 }
