@@ -5,13 +5,13 @@ public class Producto {
 	private int numeroLote;
 	
 	//constructor 1
-	Producto(){
+	public Producto(){
 		this.fechaCaducidad="Sin fecha de caducidad";
 		this.numeroLote=0;
 	}
 	
 	//constructor 2
-	Producto(String fechaCaducidad,int numeroLote){
+	public Producto(String fechaCaducidad,int numeroLote){
 		this.fechaCaducidad=fechaCaducidad;
 		this.numeroLote=numeroLote;
 	}
@@ -36,7 +36,7 @@ public class Producto {
 	// método toString()
 	@Override
 	public String toString() {
-		return "Producto [fechaCaducidad=" + fechaCaducidad + ", numeroLote=" + numeroLote + "]";
+		return "fechaCaducidad=" + fechaCaducidad + ", numeroLote=" + numeroLote ;
 	}
 	
 	

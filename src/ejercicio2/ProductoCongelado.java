@@ -4,12 +4,12 @@ public class ProductoCongelado extends Producto {
 	private int temperaturaRecomendada;
 
 	//constructor 1
-	ProductoCongelado(){
+	public ProductoCongelado(){
 		super();
 		this.temperaturaRecomendada=0;
 	}
 	//constructor 2
-	ProductoCongelado(String fechaCaducidad,int numeroLote,int temperaturaRecomendada){
+	public ProductoCongelado(String fechaCaducidad,int numeroLote,int temperaturaRecomendada){
 		super(fechaCaducidad,numeroLote);
 		this.temperaturaRecomendada=temperaturaRecomendada;	
 	}
@@ -25,7 +25,7 @@ public class ProductoCongelado extends Producto {
 	//método toString()
 	@Override
 	public String toString() {
-		return "ProductoCongelado [temperaturaRecomendada=" + temperaturaRecomendada + "]";
+		return "temperaturaRecomendada=" + temperaturaRecomendada;
 	}
 	
 	

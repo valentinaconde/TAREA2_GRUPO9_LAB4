@@ -1,20 +1,27 @@
 package ejercicio3;
 
-public class EdificioDeOficinas implements IEdificio {
-    private double superficie;
+public class EdificioDeOficinas extends Edificio {
+   
     private int numeroDeOficinas;
 
+    public EdificioDeOficinas() {
+    	super();
+    	this.numeroDeOficinas=0;
+    }
     public EdificioDeOficinas(double superficie, int numeroDeOficinas) {
-        this.superficie = superficie;
+        super(superficie);
         this.numeroDeOficinas = numeroDeOficinas;
     }
 
-    @Override
-    public double getSuperficieEdificio() {
-        return this.superficie;
-    }
-
+  
     public int getNumeroDeOficinas() {
         return this.numeroDeOficinas;
     }
+
+	@Override
+	public String toString() {
+		return super.toString() + ", numero de oficinas=" + numeroDeOficinas ;
+	}
+    
+    
 }

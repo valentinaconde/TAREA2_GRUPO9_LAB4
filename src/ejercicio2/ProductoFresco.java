@@ -6,14 +6,14 @@ public class ProductoFresco extends Producto {
 	private String paisOrigen;
 	
 	//constructor 1
-	ProductoFresco(){
+	public ProductoFresco(){
 	super();
 	this.fechaEnvasado="Sin fecha envasado";
 	this.paisOrigen="Sin país origen";
 	}
 	
 	//constructor 2
-	ProductoFresco(String fechaCaducidad,int numeroLote,String fechaEnvasado,String paisOrigen ){
+	public ProductoFresco(String fechaCaducidad,int numeroLote,String fechaEnvasado,String paisOrigen ){
 		super(fechaCaducidad,numeroLote);
 		this.fechaEnvasado=fechaEnvasado;
 		this.paisOrigen=paisOrigen;
@@ -39,7 +39,7 @@ public class ProductoFresco extends Producto {
 	//método toString()
 	@Override
 	public String toString() {
-		return "ProductoFresco [fechaEnvasado=" + fechaEnvasado + ", paisOrigen=" + paisOrigen + "]";
+		return "fechaEnvasado=" + fechaEnvasado + ", paisOrigen=" + paisOrigen ;
 	}
 	
 
