@@ -1,6 +1,6 @@
 package ejercicio3;
 
-public class Edificio {
+public abstract class Edificio {
 	private double superficieEdificio;
 	
 	public Edificio() {
@@ -24,5 +24,6 @@ public class Edificio {
 		return "superficie de edificio=" + superficieEdificio ;
 	}
 	
+	public abstract void mostrarInformacion();
 
 }

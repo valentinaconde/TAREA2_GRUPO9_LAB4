@@ -23,5 +23,8 @@ public class EdificioDeOficinas extends Edificio {
 		return super.toString() + ", numero de oficinas=" + numeroDeOficinas ;
 	}
     
+    public void mostrarInformacion() {
+        System.out.println("Edificio de Oficinas: Superficie: " + getSuperficieEdificio() + ", Cantidad oficinas: " + numeroDeOficinas);
+    }
     
 }

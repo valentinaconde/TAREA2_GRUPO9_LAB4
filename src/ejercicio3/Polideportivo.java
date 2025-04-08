@@ -50,6 +50,9 @@ public class Polideportivo extends Edificio implements IInstalacionDeportiva {
 		return super.toString()+" nombre: "+nombre+", tipo de instalacion: "+tipoDeInstalacion;
 	}
 	
+	public void mostrarInformacion() {
+		System.out.println("Polideportivo: Superficie: " + getSuperficieEdificio() + ", Nombre: " + nombre + ", Tipo de Instalacion: " + tipoDeInstalacion);
+	}
 
 	
 }
